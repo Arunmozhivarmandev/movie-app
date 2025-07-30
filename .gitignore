@@ -1,0 +1,63 @@
+# Common
+node_modules/
+dist/
+build/
+out/
+coverage/
+*.log
+
+# Environment variables
+.env
+.env.*.local
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Package manager specific
+.pnpm-store/
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Prisma (inside backend/)
+backend/prisma/dev.db
+backend/prisma/dev.db-journal
+backend/prisma/migrations/
+backend/prisma/.env
+
+# Backend specific
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.DS_Store
+
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.DS_Store
+
+# Optional deployment & testing
+*.local
+*.test.ts
+*.spec.ts
+.cache/
+.next/
+vercel/
+railway/
