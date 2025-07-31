@@ -10,6 +10,25 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+}
+
+model Media {
+  id        Int       @id @default(autoincrement())
+  title     String
+  type      MediaType
+  director  String
+  budget    String
+  location  String
+  duration  String
+  yearRange String
+  imageUrl  String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+enum MediaType {
+  Movie
+  Tvshow
 }
